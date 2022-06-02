@@ -15,20 +15,48 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
 </head>
 
-<body class="antialiased">
-    <header>
+<body  class="antialiased" style="background-color:#FAEDF0;">
+<header>
         <!-- Navigation -->
-        <!-- Just an image -->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://icons-for-free.com/download-icon-development+js+laravel+logo+script+icon-1320184809621043055_512.png" height="60" alt="MDB Logo" loading="lazy" />
-                </a>
-            </div>
-        </nav>
+        <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color "style="background-color:#25274d;">
+  <a class="navbar-brand" href="./home">candy chocolate</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./home">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact">contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./about">About</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="./register" class="nav-link waves-effect waves-light" >
+          Register
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="./login" class="nav-link waves-effect waves-light">
+          login
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
     </header>
     <br>
-    <main>
+    <main class="vh-100 mt-5">
     <div class="container contact">
 	<div class="row">
 		<div class="col-md-3">
@@ -77,7 +105,42 @@
     </main>
     <br>
     <!-- footer -->
+	<!-- footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">chocolate.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end footer -->
     <!-- end footer -->
 </body>
 

@@ -8,32 +8,52 @@
     <script src="https://kit.fontawesome.com/71fa6fa637.js" crossorigin="anonymous"></script>
     <title>chocolate</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style1.css') }}" >
 </head>
 
 <body class="antialiased">
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://logos.textgiraffe.com/logos/logo-name/Chocolate-designstyle-chocolate-m.png" alt="..." height="60">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                    </ul>
-                </div>
+        <!--Navbar -->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color" style="background-color:#25274d;">
+            <a class="navbar-brand" href="./home">candy chocolate</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./home">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about">About</a>
+                    </li>
+                </ul>
+                <ul class="ul-nav navbar-nav nav-flex-icons ">
+                    <li class="nav-item">
+                        <a href="./register" class="nav-link waves-effect waves-light">
+                            Register
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./login" class="nav-link waves-effect waves-light">
+                            login
+                        </a>
+                    </li>
+                </ul>
             </div>
+
         </nav>
+        <!--/.Navbar -->
     </header>
     <br>
     <main>
@@ -103,7 +123,7 @@
                         <img class="card-img-top" src="https://www.lindtusa.com/wcsstore/LindtCatalogAssetStore/images/content/homepage/Mothers-Day-Seasonal-250x150.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Seasonal
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -149,4 +169,5 @@
     <!-- end footer -->
 </body>
 <!-- sidebar -->
+
 </html>

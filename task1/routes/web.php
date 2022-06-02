@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\candyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,15 +31,12 @@ Route::get('/index',function(){
 //     return "Hellooooooooooooo ".$name." your id is ".$id;
 // }); 
 
-Route::get('/duaa',function(){
-    return view('orange');
+Route::controller(candyController::class)->group(function(){
+    Route::get('/home','viewhome');
+    Route::get('/contact','viewcontact');
+    Route::get('/about','viewabout');
+    Route::get('/login','viewlogin');
+    Route::get('/register','viewregister');
 });
-Route::get('/choco',function(){
-    return view('chocolate');
-});
-Route::get('/contact',function(){
-    return view('contact');
-});
-Route::get('/about',function(){
-    return view('about');
-});
+Route::get('/id/{id}/',[candyController::class , 'num'])-> where('id','[0-9]+');
+Route::get('name/{name}',[candyController::class , 'user'])-> where('name', '[A-z]+');
