@@ -19,7 +19,7 @@
     <header>
         <!-- Navigation -->
         <!--Navbar -->
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color" style="background-color:#25274d;">
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color justify-content-between"  style="background-color:#25274d;">
             <a class="navbar-brand" href="./home">candy chocolate</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,6 +38,9 @@
                         <a class="nav-link" href="./about">About</a>
                     </li>
                 </ul>
+                
+            </div>
+            <div>
                 <ul class="ul-nav navbar-nav nav-flex-icons ">
                     <li class="nav-item">
                         <a href="./register" class="nav-link waves-effect waves-light">
@@ -51,7 +54,6 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
         <!--/.Navbar -->
     </header>

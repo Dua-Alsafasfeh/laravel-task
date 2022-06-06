@@ -1,6 +1,9 @@
 <?php
 use App\Http\Controllers\Candy2Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CardController;
+use GuzzleHttp\Psr7\Request;
+use Illuminate\Http\Request as HttpRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +28,11 @@ Route::controller(Candy2Controller::class)->group(function(){
     Route::get('/register','viewregister');
 });
 
-Route::get('/data', [Candy2Controller::class, 'fetch']);
-Route::get('delete-data/id/{id}', [Candy2Controller::class, 'destroy']);
-Route::get('edit-data/id/{id}', [Candy2Controller::class, 'edit']);
-Route::put('update-data/id/{id}', [Candy2Controller::class, 'update']);
-Route::get('add-data', [Candy2Controller::class, 'add']);
-Route::post('add-data', [Candy2Controller::class, 'create']);
+Route::controller(CardController::class)->group(function(){
+    Route::get('index', 'display');
+    Route::get('add-product', 'add');
+    Route::post('add-product','insert');
+    Route::get('delete/id/{id}', 'destroy');
+    Route::get('edit-product/id/{id}', 'edit');
+    Route::put('update-product/id/{id}', 'update');
+});
