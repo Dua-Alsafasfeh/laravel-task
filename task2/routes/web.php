@@ -24,3 +24,10 @@ Route::controller(Candy2Controller::class)->group(function(){
     Route::get('/login','viewlogin');
     Route::get('/register','viewregister');
 });
+
+Route::get('/data', [Candy2Controller::class, 'fetch']);
+Route::get('delete-data/id/{id}', [Candy2Controller::class, 'destroy']);
+Route::get('edit-data/id/{id}', [Candy2Controller::class, 'edit']);
+Route::put('update-data/id/{id}', [Candy2Controller::class, 'update']);
+Route::get('add-data', [Candy2Controller::class, 'add']);
+Route::post('add-data', [Candy2Controller::class, 'create']);
