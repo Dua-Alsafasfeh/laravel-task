@@ -11,6 +11,8 @@
                                 <img src="https://images.pexels.com/photos/4016657/pexels-photo-4016657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample photo" class="img-fluid" style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
                             </div>
                             <div class="col-xl-7">
+                                <form action="register" method="post" >
+                                    @csrf
                                 <div class="card-body p-md-5 text-black">
                                     <h3 class="mb-5 text-uppercase text-center">Registration form</h3>
 
@@ -18,19 +20,22 @@
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <label class="form-label" for="form3Example1m">First name</label>
-                                                <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                                                <input type="text" name="firstname" value="{{ old('firstname') }}" id="form3Example1m" class="form-control form-control-lg" />
+                                                <span style="color: red;">@error('firstname'){{$message}}@enderror </span>
 
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline"><label class="form-label" for="form3Example1n">Last name</label>
-                                                <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                                                <input type="text" name="lastname" value="{{ old('lastname') }}" id="form3Example1n" class="form-control form-control-lg" />
+                                                <span style="color: red;">@error('lastname'){{$message}}@enderror </span>
 
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-outline mb-4"><label class="form-label" for="form3Example8">E-mail</label>
-                                        <input type="email" id="form3Example8" class="form-control form-control-lg" />
+                                        <input type="email" id="form3Example8" name="email" value="{{ old('email') }}" class="form-control form-control-lg" />
+                                        <span style="color: red;">@error('email'){{$message}}@enderror </span>
 
                                     </div>
 
@@ -38,6 +43,7 @@
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline"><label class="form-label" for="form3Example1m1">password</label>
                                                 <input type="password" id="form3Example1m1" class="form-control form-control-lg" />
+                                                <span style="color: red;">@error('password'){{$message}}@enderror </span>
 
                                             </div>
                                         </div>
@@ -54,7 +60,8 @@
 
                                     </div>
                                     <div class="form-outline mb-4"><label class="form-label" for="form3Example8">Mobile Number</label>
-                                        <input type="number" id="form3Example8" class="form-control form-control-lg" />
+                                        <input type="number" id="form3Example8" name="phonenumber" value="{{ old('phonenumber') }}" class="form-control form-control-lg" />
+                                        <span style="color: red;">@error('phonenumber'){{$message}}@enderror </span>
 
                                     </div>
 
@@ -76,7 +83,7 @@
                                         <!-- <button type="button" class="btn btn-light btn-lg">Reset all</button> -->
                                         <button type="button" class="btn btn-warning btn-lg ms-2">Submit Form</button>
                                     </div>
-                                </div>
+                                </div></form>
                             </div>
                         </div>
                     </div>

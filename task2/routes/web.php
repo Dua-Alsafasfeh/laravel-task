@@ -36,3 +36,5 @@ Route::controller(CardController::class)->group(function(){
     Route::get('edit-product/id/{id}', 'edit');
     Route::put('update-product/id/{id}', 'update');
 });
+Route::post('register', [Candy2Controller::class, 'form_validate']);
+Route::view('check','layout.register');
