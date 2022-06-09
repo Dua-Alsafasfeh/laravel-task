@@ -20,7 +20,7 @@
        @if ($movie->destroy == 1)
             @continue
        @else 
-            <div class="card" style="width: 30rem;">
+            <div class="card" style="width: 25rem;">
             <img class="card-img-top" src="{{$movie->picture}}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title"><a href="{{url("/store/id/$movie->id")}}">{{$movie->name}}</a></h5>

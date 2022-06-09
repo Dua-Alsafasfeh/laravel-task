@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container row justify-content-center my-5 py-5">
-        <div class="col-4 offset-5 ">Add Movie Data</div>
+        <div class="col-4 offset-5 text">Add Movie Data</div>
         <div class="col-4 offset-3">
             <form action="add-data" method="POST" class="form-group">
                 @csrf
@@ -19,8 +19,7 @@
                 <label for="trailer">Movie Trailer</label>
                 <input type="text" class="form-control" id="trailer" name="trailer" required>
                 <label for="picture">Movie Picture</label>
-                <input type="text" class="form-control" id="picture" name="picture" required>
-                
+                <input type="text" class="form-control" id="picture" name="picture" required>     
                 <button type="submit" class="btn offset-5 mt-5" style="border:1px solid red ;color:red">Add</button>
             </form>
         </div>
