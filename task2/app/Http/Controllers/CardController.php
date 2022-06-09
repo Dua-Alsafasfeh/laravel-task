@@ -15,7 +15,7 @@ class CardController extends Controller
         return view('pages.addproduct');
     }
 
-    public function insert(Request $request){
+    public function insert(Request $request){//create item 
         $product= new card();
         $product->name = $request->input('name');
         $product->description = $request->input('description');

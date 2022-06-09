@@ -21,6 +21,9 @@ class Candy2Controller extends Controller
     public function viewregister(){
         return view('layout.register');
     }
+    public function viewshop(){
+        return view('layout.shop');
+    }
     public function about(){
         $group =array('one' => 'Anas Allawafeh','two' => 'Duaa Alsafasfeh','three' => 'Marwa nseerat','four' => 'Taebah Shlouh');
         return view('layout.aboutus')->with($group);

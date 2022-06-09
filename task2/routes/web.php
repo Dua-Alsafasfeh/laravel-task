@@ -26,6 +26,7 @@ Route::controller(Candy2Controller::class)->group(function(){
     Route::get('/aboutus','about');
     Route::get('/login','viewlogin');
     Route::get('/register','viewregister');
+    Route::get('/shop','viewshop');
 });
 
 Route::controller(CardController::class)->group(function(){

@@ -33,6 +33,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="./shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./contactus">contact</a>
                     </li>
                     <li class="nav-item">
